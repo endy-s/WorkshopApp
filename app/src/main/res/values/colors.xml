@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/ceruleanBlue</color>
+    <color name="colorPrimaryDark">@color/oceanBlue</color>
+    <color name="colorAccent">@color/clearBlue</color>
+    <color name="clearBlue">#1D8BF9</color>
+    <color name="facebookBlue">#39579A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ceruleanBlue">#0066CC</color>
+    <color name="oceanBlue">#005FBE</color>
+</resources>
