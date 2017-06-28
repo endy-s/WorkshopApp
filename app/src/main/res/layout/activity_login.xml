@@ -1,66 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context="io.ckl.workshopapp.LoginActivity">
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:hint="@string/email_hint"
-            android:inputType="textEmailAddress"/>
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            tools:context="io.ckl.workshopapp.LoginActivity">
 
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:inputType="textWebPassword"/>
-
-    </android.support.design.widget.TextInputLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="16dp"
-        android:text="@string/forgot_password"
-        android:textSize="14sp"
-        android:textStyle="bold" />
-
-    <Button
-        style="@style/loginBlueButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/log_in" />
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:text="@string/or"
-        android:textAllCaps="true" />
+        android:orientation="vertical">
 
-    <Button
-        style="@style/loginBlueButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/facebookBlue"
-        android:text="@string/log_in_facebook" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textWebPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:text="@string/forgot_password"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/loginBlueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="@string/or"
+            android:textAllCaps="true"/>
+
+        <Button
+            style="@style/loginBlueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/facebookBlue"
+            android:text="@string/log_in_facebook"/>
+    </LinearLayout>
+</ScrollView>
